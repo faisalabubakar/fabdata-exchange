@@ -1,0 +1,220 @@
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #222;
+}
+header {
+    background: #1a237e;
+    color: #fff;
+    padding: 0.5rem 0 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #ffb300;
+}
+.header-btns {
+    display: flex;
+    gap: 1rem;
+}
+.header-btn {
+    background: #ffb300;
+    color: #1a237e;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.2s, color 0.2s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.header-btn.login {
+    background: #fff;
+    color: #1a237e;
+    border: 1px solid #ffb300;
+}
+.header-btn.register {
+    background: #ffb300;
+    color: #1a237e;
+}
+.header-btn:hover {
+    background: #ffd54f;
+    color: #1a237e;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #1a237e 60%, #3949ab 100%);
+    color: #fff;
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    gap: 2.5rem;
+}
+.hero-img {
+    width: 340px;
+    max-width: 40vw;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.hero-content {
+    max-width: 500px;
+}
+.hero-content h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.hero-content p {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+}
+.cta-btn {
+    display: inline-block;
+    background: #ffb300;
+    color: #1a237e;
+    padding: 0.75rem 2.2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.cta-btn:hover {
+    background: #ffd54f;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto 5rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+section {
+    margin-bottom: 2rem;
+}
+/* Info Sections */
+.info-section {
+    background: #f8fafc;
+    margin: 2.5rem 0 2.5rem 0;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info-section h2 {
+    color: #1a237e;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.info-section ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+}
+.info-section li {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+}
+footer {
+    background: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+/* Form Container for login/register */
+.form-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.form-container h2 {
+    margin-bottom: 1.5rem;
+}
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-container button {
+    width: 100%;
+    padding: 0.7rem;
+    background: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.form-container button:hover {
+    background: #3949ab;
+}
+.error {
+    color: #d32f2f;
+    margin-bottom: 1rem;
+}
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .hero-img {
+        width: 90vw;
+        max-width: 350px;
+    }
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    main {
+        padding: 1rem;
+    }
+}
